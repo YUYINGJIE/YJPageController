@@ -19,6 +19,7 @@
 		3F3DF9D92262212C006A2F88 /* YJPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DF9D82262212C006A2F88 /* YJPageControlView.m */; };
 		3F3DF9DC2262291D006A2F88 /* YJListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DF9DB2262291D006A2F88 /* YJListViewController.m */; };
 		3F3DF9DF22623542006A2F88 /* YJDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DF9DE22623542006A2F88 /* YJDemo.m */; };
+		3F69E1552262EE5900668F29 /* YJTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F69E1542262EE5900668F29 /* YJTwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		3F3DF9DB2262291D006A2F88 /* YJListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJListViewController.m; sourceTree = "<group>"; };
 		3F3DF9DD22623542006A2F88 /* YJDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJDemo.h; sourceTree = "<group>"; };
 		3F3DF9DE22623542006A2F88 /* YJDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJDemo.m; sourceTree = "<group>"; };
+		3F69E1532262EE5900668F29 /* YJTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTwoViewController.h; sourceTree = "<group>"; };
+		3F69E1542262EE5900668F29 /* YJTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				3F3DF9DE22623542006A2F88 /* YJDemo.m */,
 				3F3DF9DA2262291D006A2F88 /* YJListViewController.h */,
 				3F3DF9DB2262291D006A2F88 /* YJListViewController.m */,
+				3F69E1532262EE5900668F29 /* YJTwoViewController.h */,
+				3F69E1542262EE5900668F29 /* YJTwoViewController.m */,
 				3F3DF9A52262161D006A2F88 /* Main.storyboard */,
 				3F3DF9A82262161D006A2F88 /* Assets.xcassets */,
 				3F3DF9AA2262161D006A2F88 /* LaunchScreen.storyboard */,
@@ -305,6 +310,7 @@
 				3F3DF9D92262212C006A2F88 /* YJPageControlView.m in Sources */,
 				3F3DF9DF22623542006A2F88 /* YJDemo.m in Sources */,
 				3F3DF9D52262165A006A2F88 /* HMSegmentedControl.m in Sources */,
+				3F69E1552262EE5900668F29 /* YJTwoViewController.m in Sources */,
 				3F3DF9AF2262161D006A2F88 /* main.m in Sources */,
 				3F3DF9A12262161D006A2F88 /* AppDelegate.m in Sources */,
 				3F3DF9DC2262291D006A2F88 /* YJListViewController.m in Sources */,

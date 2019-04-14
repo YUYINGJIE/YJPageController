@@ -1,34 +1,33 @@
 //
-//  YJListViewController.m
+//  YJTwoViewController.m
 //  YJPageController
 //
-//  Created by 于英杰 on 2019/4/13.
+//  Created by 于英杰 on 2019/4/14.
 //  Copyright © 2019 YYJ. All rights reserved.
 //
 
-#import "YJListViewController.h"
-#import "YJPageControlView.h"
 #import "YJTwoViewController.h"
+#import "YJPageControlView.h"
 
-@interface YJListViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface YJTwoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView*tableView;
 
 @end
 
-@implementation YJListViewController
+@implementation YJTwoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-
+    
 }
 
 -(UITableView*)tableView{
     
     if (_tableView==nil) {
-        CGRect frame =CGRectMake(0, 0, kScreenWidth, _viewheight);
+        CGRect frame =CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-KNavhight-KStatushight);
         _tableView=[[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -55,22 +54,12 @@
     NSString* cellIdentifier = @"cell";
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"第%@VC 第%zd行",self.pageVCindex?:@"跳转了新页面",indexPath.row];
-    cell.detailTextLabel.text = @"点击跳转新界面";
-    cell.detailTextLabel.textColor = self.navigationController.navigationBar.tintColor;
-    return cell;
-}
+    cell.textLabel.text = [NSString stringWithFormat:@"第%zd行",indexPath.row];
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    YJTwoViewController *vc = [[YJTwoViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:true];
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return cell;
 }
 
 /*
